@@ -1,0 +1,20 @@
+pipeline{
+
+agent any
+
+stages {
+
+stage('SpotifyRestAssuredAPIAutomation'){
+steps{
+sh "mvn test"
+}
+}
+
+stage('SpotifyRestAssuredAPIAutomation'){
+steps{
+sh "mvn test"
+}
+}
+
+}
+}
