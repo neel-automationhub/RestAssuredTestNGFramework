@@ -6,7 +6,7 @@ stages {
 
 stage('selenium-POM-interview'){
 steps{
-git url: 'https://github.com/neel-automationhub/selenium-pom-ci-cd.git', credentialsId: '747e2298-ee72-47a5-86ff-2b9f310886cb'
+git branch: 'main', credentialsId: '747e2298-ee72-47a5-86ff-2b9f310886cb', url: 'https://github.com/neel-automationhub/selenium-pom-ci-cd.git'
 sh "mvn test"
 }
 }
