@@ -10,6 +10,12 @@ sh "mvn test"
 }
 }
 
+stage('test'){
+steps{
+echo 'Deploying the code'
+}
+}
+
 stage('SpotifyRestAssuredAPIAutomation'){
 steps{
 sh "mvn test"
