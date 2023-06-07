@@ -7,9 +7,7 @@ stages {
 stage('selenium-POM-interview'){
 steps{
 git branch: 'main', credentialsId: '747e2298-ee72-47a5-86ff-2b9f310886cb', url: 'https://github.com/neel-automationhub/selenium-pom-ci-cd.git'
-emailext body: '''Hi,
-This is a test email from Jenkins ci-cd result''', subject: 'Jenkins ci-cd result job result', to: 'pneel141@gmail.com'
-sh "mvn test"
+sh "mvn test -PProfile='Smoke' -DbrowserName='chrome'"
 }
 }
 
