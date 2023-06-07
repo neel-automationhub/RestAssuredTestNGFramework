@@ -10,11 +10,11 @@ sh "mvn test"
 }
 }
 
-stage('SpotifyRestAssuredAPIAutomation'){
+/* stage('SpotifyRestAssuredAPIAutomation'){
 steps{
 sh "mvn test"
 }
-}
+} */
 
 }
 }
