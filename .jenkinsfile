@@ -10,11 +10,11 @@ sh "mvn test"
 }
 }
 
-/* stage('SpotifyRestAssuredAPIAutomation'){
+stage('selenium-POM-interview'){
 steps{
 sh "mvn test"
 }
-} */
+}
 
 }
 }
