@@ -21,8 +21,6 @@ echo 'Deploying the code'
 
 stage('SpotifyRestAssuredAPIAutomation'){
 steps{
-// sh "mvn test"
-sh "mvn clean"
 sh "mvn test"
 }
 }
