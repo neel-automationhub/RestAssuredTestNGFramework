@@ -4,13 +4,13 @@ agent any
 
 stages {
 
-stage('SpotifyRestAssuredAPIAutomation'){
+stage('selenium-POM-interview'){
 steps{
 sh "mvn test"
 }
 }
 
-stage('selenium-POM-interview'){
+stage('SpotifyRestAssuredAPIAutomation'){
 steps{
 sh "mvn test"
 }
