@@ -6,6 +6,7 @@ stages {
 
 stage('selenium-POM-interview'){
 steps{
+git 'https://github.com/neel-automationhub/selenium-pom-ci-cd.git'
 sh "mvn test"
 }
 }
